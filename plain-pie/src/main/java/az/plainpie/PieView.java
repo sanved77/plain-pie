@@ -19,7 +19,7 @@ import az.plainpie.annotation.ColorInt;
  */
 public class PieView extends View {
 
-    private static final String DEFAULT_PERCENTAGE_TEXT = "0%";
+    private static final String DEFAULT_PERCENTAGE_TEXT = "0";
     private static final int DEFAULT_PERCENTAGE_SIZE = 35;
     private static final int DEFAULT_INNER_CIRCLE_PADDING = 15;
     private static final int CIRCLE_DEGREES = 360;
@@ -49,7 +49,7 @@ public class PieView extends View {
         baseLayout.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
         mPercentageTextView = new TextView(context);
         int roundedPercentage = (int) (mPercentage * this.mMaxPercentage);
-        mPercentageTextView.setText(Integer.toString(roundedPercentage) + "%");
+        mPercentageTextView.setText(Integer.toString(roundedPercentage) + "");
         baseLayout.addView(mPercentageTextView);
         mPercentageSize = 50;
         mPercentageTextView.setTextSize(mPercentageSize);
