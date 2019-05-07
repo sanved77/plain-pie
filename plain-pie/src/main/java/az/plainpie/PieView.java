@@ -101,7 +101,7 @@ public class PieView extends View {
     private void setPercentageText() {
         if (mPercentage != 0) {
             int roundedPercentage = (int) (mPercentage * mMaxPercentage);
-            mPercentageTextView.setText(Integer.toString(roundedPercentage) + "%");
+            mPercentageTextView.setText(Integer.toString(roundedPercentage) + "");
         } else {
             mPercentageTextView.setText(DEFAULT_PERCENTAGE_TEXT);
         }
